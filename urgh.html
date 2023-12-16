@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reprodução de Áudio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <h1>Reprodução de Áudio</h1>
+  <button id="play-button">Reproduzir Áudio</button>
+  <script>
+    // Using jQuery to handle the button click event
+    $(document).ready(function() {
+      $("#play-button").click(function() {
+        // Play audio using the audio element
+        var audio = document.createElement("audio");
+        audio.src = "C:\\Trabalho.estudo\\testes\\Roblox-death-sound.mp3";
+        audio.play();
+      });
+    });
+  </script>
+</body>
+</html>
